@@ -1,6 +1,8 @@
 # Project Title
 
-One Paragraph of the project description
+![kickbro](https://github.com/YUNSUNGWOONG/KickBro/assets/100409315/8cfd7e84-a57e-4374-b850-5c7e85d4e963)
+
+
 
 Initially appeared on
 [gist](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2). But the page cannot open anymore so that is why I have moved it here.
