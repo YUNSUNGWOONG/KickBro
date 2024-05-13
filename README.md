@@ -1,4 +1,4 @@
-# Project Title
+# KickBro(edited by jacksmith)
 
 ![kickbro](https://github.com/YUNSUNGWOONG/KickBro/assets/100409315/8cfd7e84-a57e-4374-b850-5c7e85d4e963)
 
