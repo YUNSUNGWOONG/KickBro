@@ -2,6 +2,8 @@
 #define ECHO 8 // ECHO 핀 설정 (초음파 받는 핀)
 #define BUZZER 7 // BUZZER 핀 설정 (부저 핀)
 
+// LED사용 대신에 부저를 사용하도록 수정한 코드
+
 void setup() {
   Serial.begin(9600);
 
