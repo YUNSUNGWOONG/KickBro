@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if user_id %}                         
+		<p>킥보드와 연결되었습니다. 킥보드 ID: {{user_id}} </p> 
+	{% endif %}
+    
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/0e4f161a-ffa3-4e2a-bd27-b6194729af8a/TWjKMuGldQ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en"><!-- 처음에 로그인을 진행하는 entry화면 --><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up(KickBro)</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <div class="login-box">
+        <div class="login-header" style="width: 180px;">
+          <span>Connect</span>
+        </div>
+        <div class="input_box" style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        ">
+        <p>킥보드와 연결되었습니다.</p><br>
+            {% if user_id %}                         
+                <p>  킥보드 ID: {{user_id}} </p> 
+            {% endif %}
+        </div>
+
+        <div class="lottie_box" style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 35vh;
+        ">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+        <dotlottie-player src="https://lottie.host/0e4f161a-ffa3-4e2a-bd27-b6194729af8a/TWjKMuGldQ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        </div>
+        
+        
+  
+        
+        <div class="input_box">
+          <input type="submit" class="input-submit" value="Wearing Recognition" onclick="handleLogin()">
+        </div>
+        
+      </div>
+    </div>
+  
+    
+  </body>
+  <script>
+    function handleLogin() {
+      // Get the value from the input field
+      // const value = document.getElementById('inputValue').value;
+      const value = 4487;
+
+      // Get the current host (hostname or IP address)
+      const host = window.location.hostname;
+
+      // Construct the new URL
+      const newURL = `http://${host}/countdown`;
+
+      // Redirect to the new URL
+      window.location.href = newURL;
+    }
+  </script>
+  </html>

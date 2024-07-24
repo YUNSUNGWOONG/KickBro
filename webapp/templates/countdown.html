@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 헬맷 착용여부를 따지고 헬맷잠금을 해제하는 예제-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up(KickBro)</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/countdown.css" />
+    <link rel="stylesheet" href="./static/style.css" />
+    
+    <style>
+      .camera_screen {
+            width: 100%;
+            height: 300px;
+            background-color: #155A72;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="login-box">
+        <div class="login-header" style="width: 205px">
+          <span>Connecting</span>
+        </div>
+        <div
+          class="input_box"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <p>헬멧을 착용해주세요!</p>
+          <br />
+        </div>
+
+        <div class="camera_screen">Camera_screen</div>
+        <div style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        ">
+          <div class="box">
+            <span></span>
+            <h2 id="message">20</h2>
+          </div>
+          <!-- <div class="border-blur"></div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function handleLogin() {
+      // Get the value from the input field
+      // const value = document.getElementById('inputValue').value;
+      const value = 4487;
+
+      // Get the current host (hostname or IP address)
+      const host = window.location.hostname;
+
+      // Construct the new URL
+      const newURL = `http://${host}/${value}`;
+
+      // Redirect to the new URL
+      window.location.href = newURL;
+    }
+    let count = 20;
+    const messageElement = document.getElementById('message');
+
+    function countdown() {
+        if (count > 0) {
+            messageElement.textContent = `${count}`;
+            count--;
+            setTimeout(countdown, 1000);
+        } else {
+            // messageElement.textContent = 'Time Over!';
+            const h2Element = document.getElementById('message');
+            const h3Element = document.createElement('h3');
+            h3Element.id = 'message';
+            h3Element.textContent = 'Time Over!';
+            h2Element.parentNode.replaceChild(h3Element, h2Element);
+        }
+    }
+
+    countdown();
+  </script>
+</html>

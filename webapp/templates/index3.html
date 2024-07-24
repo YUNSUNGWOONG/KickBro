@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- 값을 input에 입력하면 해당 값이 url에 박히는 예제 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KickBro!</title>
+</head>
+<body>
+	<h1>Welcome to KickBro!</h1>
+	<br>
+	<h1>Enter a Value</h1>
+    <input type="text" id="inputValue" placeholder="Enter something...">
+    <button onclick="setURL()">Set URL</button>
+</body>
+<script>
+	function setURL() {
+		// Get the value from the input field
+		const value = document.getElementById('inputValue').value;
+		// Construct the new URL
+		const newURL = `http://localhost/${value}`;
+		// Redirect to the new URL
+		window.location.href = newURL;
+	}
+</script>
+</html>
