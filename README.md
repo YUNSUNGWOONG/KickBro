@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="https://github.com/YUNSUNGWOONG/KickBro/assets/100409315/c61ed9a9-0b2a-484a-aa61-0fade654f580" alt="kickbro" style="zoom: 50%;" />
+  <img src="https://github.com/YUNSUNGWOONG/KickBro/assets/100409315/c61ed9a9-0b2a-484a-aa61-0fade654f580" alt="kickbro" style="zoom: 40%;" />
   <br>
 </p>
 
