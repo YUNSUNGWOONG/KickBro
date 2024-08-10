@@ -106,7 +106,7 @@ a:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 
 .input-field {
@@ -223,7 +223,7 @@ a {
     padding: 15px;
   }
   .login-box {
-    padding: 7.5em 1.5em 4em 2.5em;
+    padding: 5.5em 1.5em 3em 2.5em;
   }
   .modal-content {
     width: 90%; /* Adjust modal width */
